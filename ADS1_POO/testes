@@ -1,0 +1,10 @@
+def test_gerar_gerador_qualificado() :
+    gerador = Gerador("Gerador 1", 100)
+    geradorQualificado = GeradorQualificado(gerador, TiposDeEnergia.ENERGIA_HIDRELETRICA, 1)
+    geradorQualificado.ligado = True
+    geradorQualificado.gerar(100) 
+
+def test_ligar_gerador_qualificado() :
+    gerador = Gerador("Gerador 1", 100)
+    geradorQualificado = GeradorQualificado(gerador, TiposDeEnergia.ENERGIA_HIDRELETRICA, 1)
+    geradorQualificado.ligado()
